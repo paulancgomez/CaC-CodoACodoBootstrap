@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <title>bootstrap</title>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <!-- BARRA DE NAVEGACION    -->
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Codo a Codo</a>
+              <!-- BOTON MENU DE NAVEGACION -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- ICONO -->
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- OPCIONES DE MENU -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- LISTA -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cursos
+                    </a>
+                    <!-- SUBLISTA -->
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">PHP</a></li>
+                      <li><a class="dropdown-item" href="#">Phyton</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Java</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Inscribite</a>
+                  </li>
+                </ul>
+                <!-- FORMULARIO BUSCAR -->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
+     
+    <!-- ESTA CLASE LE AGREGUE YO, SIRVE PARA MARGIN, PADDING -->
+    <!-- class="container mt-4 mb-4 p-2" -->
+    <main>    
+
+        <div class="cursos container-fluid p-5 row flex">
+            <div class="card col-sm-12 col-md-4 col-lg-4 col-xl-4 p0">
+              <img src="img/html-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso Full Stack PHP</h5>
+                <p class="card-text">Sit soluta debitis commodi ea rem voluptatem, ipsam nisi magni modi delectus exercitationem illum a eos, aliquam dolore perspiciatis tenetur reprehenderit perferendis!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Actualizado fecha</small>
+              </div>
+            </div>
+            <!-- DIV 2 -->
+            <div class="card col-sm-12 col-md-4 col-lg-4 col-xl-4 p0">
+              <img src="img/css-image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso Full Stack Phyton</h5>
+                <p class="card-text">Amet quidem quod fugiat impedit digniss hic, magnam iusto iure culpa expedita quia corporis voluptatibus asperiores a modi eum eius quam recusandae!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Actualizado fecha</small>
+              </div>
+            </div>
+            <!-- DIV 3 -->
+            <div class="card col-sm-12 col-md-4 col-lg-4 col-xl-4 p0">
+              <img src="img/bootstrap-image.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso Full Stack Java</h5>
+                <p class="card-text">Rem exercitationem, sint ut ipsum quas fugiat consequatur quibusdam veritatis nesciunt nobis. Repudiandae quis nihil ipsa sit itaque mollitia consectetur voluptatem ipsam.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Actualizado fecha</small>
+              </div>
+            </div>
+          </div>
+
+    </main>        
+    
+    <footer class="ms-3">            
+        Inscribite en Nuestros Cursos     
+
+        <!-- FORMULARIO -->
+        <form>
+            <!-- EMAIL -->
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <!-- NOMBRE -->
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nombre y Apellido</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- CHECK -->
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Quiero suscribirme al newsletter de Codo a Codo</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>            
+
+</body>
+</html>
